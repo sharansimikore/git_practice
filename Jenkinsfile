@@ -2,30 +2,27 @@ pipeline {
     agent any
 
     stages {
-        stage('Git clone') {
+        stage('GitCheckout') {
             steps {
-                echo 'Code is cloned from Github successful'
+                echo 'Hello World'
             }
         }
         
-    
         stage('Build') {
             steps {
-                echo 'Building is successful'
+                echo 'Hello World'
             }
         }
         
-        
-        stage('Testing') {
+        stage('Test') {
             steps {
-                echo 'Testing is successful'
+                echo 'Hello World'
             }
         }
         
-        
-        stage('Deployment') {
+        stage('Deploy') {
             steps {
-                echo 'Deployment is successful'
+                echo 'Hello World'
             }
         }
     }
